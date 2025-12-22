@@ -1,0 +1,40 @@
+# === Node Modules ===
+node_modules/
+server/node_modules/
+
+# === Build Output ===
+dist/
+build/
+client/dist/
+client/build/
+.next/
+client/.next/
+
+# === Environment Variables ===
+.env
+.env.*
+
+# === Logs ===
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+
+# === Editor Settings ===
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# === Cache Files ===
+*.swp
+.eslintcache
+.prettiercache
+client/.cache/
+server/.cache/
+
+# === Uploads ===
