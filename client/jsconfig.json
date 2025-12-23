@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",       // This tells Next.js where to start resolving paths
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]   // Maps "@/..." → "src/..."
     }
   }
 }
