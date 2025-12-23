@@ -23,7 +23,7 @@ export default function HomePage() {
         setLoading(true);
         setError('');
 
-        const res = await fetch('http://localhost:5000/api/products');
+        const res = await fetch('https://shoppikoooo.onrender.com/api/products');
         const data = await res.json();
 
         if (res.ok) {
@@ -103,7 +103,7 @@ export default function HomePage() {
                            cursor-pointer"
               >
                 <img
-                  src={`http://localhost:5000${product.imageUrl}`}
+                  src={`https://shoppikoooo.onrender.com${product.imageUrl}`}
                   alt={product.title}
                   className="w-full h-48 object-cover rounded-md mb-4 border border-gray-700"
                   onError={(e) => {

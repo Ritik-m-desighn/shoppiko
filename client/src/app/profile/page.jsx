@@ -37,7 +37,7 @@ export default function ProfilePage() {
       setPageLoading(true); // Start loading profile data
       setFetchError(''); // Clear previous errors
 
-      const res = await fetch('http://localhost:5000/api/users/profile', {
+      const res = await fetch('https://shoppikoooo.onrender.com/api/users/profile', {
         headers: {
           'Authorization': `Bearer ${token}`, // Send the token!
         },

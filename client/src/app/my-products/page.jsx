@@ -37,7 +37,7 @@ export default function MyProductsPage() {
     try {
       setLoading(true);
       setError('');
-      const res = await fetch('http://localhost:5000/api/products?myProducts=true', { // Fetch only current user's products
+      const res = await fetch('https://shoppikoooo.onrender.com/api/products?myProducts=true', { // Fetch only current user's products
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -79,7 +79,7 @@ export default function MyProductsPage() {
     setLoading(true); // Show loading indicator during deletion
 
     try {
-      const res = await fetch(`http://localhost:5000/api/products/${productToDelete}`, {
+      const res = await fetch(`https://shoppikoooo.onrender.com/api/products/${productToDelete}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -172,7 +172,7 @@ export default function MyProductsPage() {
                        hover:scale-[1.03] hover:bg-zinc-800 hover:shadow-2xl"
           >
             <img
-              src={`http://localhost:5000${product.imageUrl}`}
+              src={`https://shoppikoooo.onrender.com${product.imageUrl}`}
               alt={product.title}
               className="w-full h-48 object-cover rounded-md mb-4 border border-gray-700"
               onError={(e) => {

@@ -109,7 +109,7 @@ export default function CheckoutPage() {
         totalPrice: parseFloat(totalPrice),
       };
 
-      const res = await fetch('http://localhost:5000/api/orders', {
+      const res = await fetch('https://shoppikoooo.onrender.com/api/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -160,7 +160,7 @@ export default function CheckoutPage() {
         {cartItems.map((item) => (
           <div key={item.productId} className="flex items-center bg-zinc-800 p-3 rounded-lg">
             <img
-              src={`http://localhost:5000${item.imageUrl}`}
+              src={`https://shoppikoooo.onrender.com${item.imageUrl}`}
               alt={item.title}
               className="w-16 h-16 object-cover rounded-md mr-4"
             />

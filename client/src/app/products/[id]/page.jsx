@@ -28,7 +28,7 @@ export default function ProductDetailPage() {
       try {
         setLoading(true);
         setError('');
-        const res = await fetch(`http://localhost:5000/api/products/${id}`);
+        const res = await fetch(`https://shoppikoooo.onrender.com/api/products/${id}`);
         const data = await res.json();
 
         if (res.ok) {
@@ -96,7 +96,7 @@ export default function ProductDetailPage() {
       <div className="flex flex-col md:flex-row gap-8">
         <div className="md:w-1/2 flex justify-center items-center p-4 bg-zinc-800 rounded-lg">
           <img
-            src={`http://localhost:5000${product.imageUrl}`}
+            src={`https://shoppikoooo.onrender.com${product.imageUrl}`}
             alt={product.title}
             width={500}
             height={500}

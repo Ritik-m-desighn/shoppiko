@@ -19,7 +19,7 @@ export default function MyOrdersPage() {
       setLoading(true);
       setError('');
 
-      const res = await fetch('http://localhost:5000/api/orders/myorders', {
+      const res = await fetch('https://shoppikoooo.onrender.com/api/orders/myorders', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -64,7 +64,7 @@ export default function MyOrdersPage() {
 
     try {
       setLoading(true); // Show loading indicator during cancellation
-      const res = await fetch(`http://localhost:5000/api/orders/${orderToCancel}/cancel`, {
+      const res = await fetch(`https://shoppikoooo.onrender.com/api/orders/${orderToCancel}/cancel`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -174,7 +174,7 @@ export default function MyOrdersPage() {
               {order.orderItems.map((item) => (
                 <div key={item.product._id} className="flex items-center bg-zinc-700 p-3 rounded-lg">
                   <img
-                    src={`http://localhost:5000${item.imageUrl}`}
+                    src={`https://shoppikoooo.onrender.com${item.imageUrl}`}
                     alt={item.name}
                     className="w-12 h-12 object-cover rounded-md mr-4 border border-gray-600"
                     onError={(e) => {

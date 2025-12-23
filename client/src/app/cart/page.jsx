@@ -54,7 +54,7 @@ export default function CartPage() {
             {/* Product Image */}
             <div className="flex-shrink-0 mb-4 sm:mb-0 sm:mr-4">
               <img
-                src={`http://localhost:5000${item.imageUrl}`}
+                src={`https://shoppikoooo.onrender.com${item.imageUrl}`}
                 alt={item.title}
                 className="w-24 h-24 object-cover rounded-md border border-gray-700"
                 onError={(e) => {

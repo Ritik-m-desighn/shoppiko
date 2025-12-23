@@ -45,7 +45,7 @@ export default function EditProductPage() { // <-- CRITICAL: ENSURE THIS LINE IS
         try {
           setPageLoading(true);
           setFetchError('');
-          const res = await fetch(`http://localhost:5000/api/products/${id}`, {
+          const res = await fetch(`https://shoppikoooo.onrender.com/api/products/${id}`, {
             headers: {
               'Authorization': `Bearer ${token}`,
             },
@@ -66,7 +66,7 @@ export default function EditProductPage() { // <-- CRITICAL: ENSURE THIS LINE IS
             setCategory(data.category);
             setStock(data.stock);
             setDiscount(data.discount);
-            setCurrentImageUrl(`http://localhost:5000${data.imageUrl}`);
+            setCurrentImageUrl(`https://shoppikoooo.onrender.com${data.imageUrl}`);
           } else {
             setFetchError(data.message || 'Failed to load product for editing.');
             toast.error(data.message || 'Failed to load product for editing.');
@@ -112,7 +112,7 @@ export default function EditProductPage() { // <-- CRITICAL: ENSURE THIS LINE IS
     }
 
     try {
-      const res = await fetch(`http://localhost:5000/api/products/${id}`, {
+      const res = await fetch(`https://shoppikoooo.onrender.com/api/products/${id}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
