@@ -32,3 +32,21 @@ Shoppiko is a high-performance, full-stack e-commerce application built using th
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/Ritik-m-desighn/shoppiko.git]
+
+
+# Install backend dependencies
+npm install
+
+# Install frontend dependencies
+cd client
+npm install
+
+
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PORT=5000
+
+
+
+# From the root directory
+npm run dev
